@@ -27,6 +27,12 @@ namespace Project
                 this.plcUserInfo.Visible = false;
             }
         }
+
+        /// <summary>
+        /// 確認管理者登入
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             string account = this.txtAccount.Text.Trim();
@@ -37,7 +43,7 @@ namespace Project
                // Response.Redirect(Request.RawUrl);
 
             }
-            if (this._mgr.GuestLogin(account, pwd)) //沒寫true or false =為true的省略寫法
+            if (this._mgr.GuestLogin(account, pwd)) //沒寫true or false =為true的省略寫法 
             {
                 Response.Redirect("~/MainPage.aspx");
                 // Response.Redirect(Request.RawUrl);
