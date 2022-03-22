@@ -211,7 +211,7 @@ namespace Project.Managers
             string connStr = ConfigHelper.GetConnectionString();
             string commandText =
                 @"  SELECT *
-                    FROM Accounts
+                    FROM Users
                     WHERE UserID = @UserID ";
             try
             {
@@ -298,7 +298,7 @@ namespace Project.Managers
             // 2. 編輯資料
             string connStr = ConfigHelper.GetConnectionString();
             string commandText =
-                @"  UPDATE Accounts
+                @"  UPDATE Users
                     SET 
                         PWD = @pwd,
                         Email=@Email,
