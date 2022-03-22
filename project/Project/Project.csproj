@@ -70,7 +70,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BackAdmin\AAAAAAAAAAA.aspx" />
     <Content Include="BackAdmin\AdminOnlyMaster.aspx" />
     <Content Include="BackAdmin\BookDetail.aspx" />
     <Content Include="BackAdmin\BookList.aspx" />
@@ -81,13 +80,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackAdmin\AAAAAAAAAAA.aspx.cs">
-      <DependentUpon>AAAAAAAAAAA.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BackAdmin\AAAAAAAAAAA.aspx.designer.cs">
-      <DependentUpon>AAAAAAAAAAA.aspx</DependentUpon>
-    </Compile>
     <Compile Include="BackAdmin\AdminOnlyMaster.aspx.cs">
       <DependentUpon>AdminOnlyMaster.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -145,7 +137,7 @@
     <Compile Include="Helpers\ConfigHelper.cs" />
     <Compile Include="Helpers\Logger.cs" />
     <Compile Include="Managers\BookContentManager.cs" />
-    <Compile Include="Models\AccountModel.cs" />
+    <Compile Include="Models\MemberAccount.cs" />
     <Compile Include="Models\BookContentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

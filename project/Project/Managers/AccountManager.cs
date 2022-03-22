@@ -10,7 +10,7 @@ namespace Project.Managers
 {
     public class AccountManager
     {
-        public bool TryLogin2(string account, string password)
+        public bool GuestLogin(string account, string password)
         {
             bool isAccountRight = false;
             bool isPasswordRight = false;
@@ -108,7 +108,7 @@ namespace Project.Managers
             string connStr = ConfigHelper.GetConnectionString();
             string commandText =
                 @"  SELECT *
-                    FROM Accounts ";
+                    FROM Users ";
 
             if (!string.IsNullOrWhiteSpace(keyword))
             {
@@ -169,7 +169,7 @@ namespace Project.Managers
             string connStr = ConfigHelper.GetConnectionString();
             string commandText =
                 @"  SELECT *
-                    FROM [Accounts]
+                    FROM [Users]
                     WHERE [Account] = @account ";
             try
             {
@@ -257,7 +257,7 @@ namespace Project.Managers
             // 2. 新增資料
             string connStr = ConfigHelper.GetConnectionString();
             string commandText =
-                @"  INSERT INTO Accounts
+                @"  INSERT INTO Users
                         ( UserID,Account, PWD,Email,Phone,isEnable,UserLevel)
                     VALUES
                         ( @UserID,@account, @pwd,@Email,@Phone,@isEnable,@userlevel)";

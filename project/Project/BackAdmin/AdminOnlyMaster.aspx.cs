@@ -19,6 +19,11 @@ namespace Project.BackAdmin
             if (!this.IsPostBack)
             {
                 MemberAccount account = this._mgr.GetCurrentUser();
+                if(account==null)
+                {
+                    Response.Redirect("~/Login.aspx");
+                }
+
                 this.ltlAccount.Text = account.Account;
 
                 string keyword = this.Request.QueryString["keyword"];

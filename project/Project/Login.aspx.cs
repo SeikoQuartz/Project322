@@ -37,7 +37,7 @@ namespace Project
                // Response.Redirect(Request.RawUrl);
 
             }
-            if (this._mgr.TryLogin2(account, pwd)) //沒寫true or false =為true的省略寫法
+            if (this._mgr.GuestLogin(account, pwd)) //沒寫true or false =為true的省略寫法
             {
                 Response.Redirect("~/MainPage.aspx");
                 // Response.Redirect(Request.RawUrl);
@@ -50,7 +50,7 @@ namespace Project
         }
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-            Response.Redirect("BackAdmin/MemberEdit.aspx");
+            Response.Redirect("BackAdmin/EditWithMain.aspx");
         }
     }
 }
