@@ -12,6 +12,7 @@
     <asp:Button ID="btnCreate" runat="server" Text="新增" OnClick="btnCreate_Click" />
     <asp:Button ID="btnDelete" runat="server" Text="刪除" OnClick="btnDelete_Click" />
          <asp:Button ID="btnCancel" runat="server" Text="取消" OnClick="btnCancel_Click" />
+    <asp:Button ID="BtnLogout" runat="server" Text="登出" OnClick="BtnLogout_Click1" />
          <br />
 
     <asp:TextBox runat="server" ID="txtKeyword" placeholder="請輸入搜尋文字"></asp:TextBox>

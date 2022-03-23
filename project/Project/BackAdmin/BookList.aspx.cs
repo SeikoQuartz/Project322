@@ -12,11 +12,16 @@ namespace Project.BackAdmin
     public partial class BookList : System.Web.UI.Page
     {
         private BookContentManager _mgr = new BookContentManager();
+        private AccountManager _mgruser = new AccountManager();
 
         // 從資料庫叫出全部的清單資料 OR 輸入書名搜尋關鍵字查詢
         // 將 搜尋關鍵字值 變成 QueryString，再次載入 BookList 頁面，顯示查詢結果
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!this._mgruser.IsLogined())
+            {
+                Response.Redirect("~/Login.aspx");
+            }
             if (!this.IsPostBack)
             {
                 // 取得keyword的querystring，以及還原至textbox

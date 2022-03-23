@@ -16,6 +16,10 @@ namespace Project.BackAdmin
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!this._mgr.IsLogined())
+            {
+                Response.Redirect("~/Login.aspx");
+            }
             if (!this.IsPostBack)
             {
                 MemberAccount account = this._mgr.GetCurrentUser();
@@ -103,6 +107,12 @@ namespace Project.BackAdmin
                 Response.Redirect("AdminOnlyMaster.aspx");
             else
                 Response.Redirect("AdminOnlyMaster.aspx?keyword=" + keyword);
+        }
+
+        protected void BtnLogout_Click1(object sender, EventArgs e)
+        {
+            this._mgr.Logout();
+            Response.Redirect("~/Login.aspx");
         }
 
         //protected void btnSearch_Click(object sender, EventArgs e)
