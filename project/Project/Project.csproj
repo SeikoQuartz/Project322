@@ -108,12 +108,12 @@
     <Compile Include="BackAdmin\EditWithMain.aspx.designer.cs">
       <DependentUpon>EditWithMain.aspx</DependentUpon>
     </Compile>
-    <Compile Include="BackAdmin\MasterBoard.Master.cs">
-      <DependentUpon>MasterBoard.Master</DependentUpon>
+    <Compile Include="BackAdmin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BackAdmin\MasterBoard.Master.designer.cs">
-      <DependentUpon>MasterBoard.Master</DependentUpon>
+    <Compile Include="BackAdmin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
     <Compile Include="Helpers\FileHelper.cs" />
     <Compile Include="Login.aspx.cs">
@@ -142,7 +142,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BackAdmin\MasterBoard.Master" />
+    <Content Include="BackAdmin\Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackAdmin/MasterBoard.Master" AutoEventWireup="true" CodeBehind="EditWithMain.aspx.cs" Inherits="Project.BackAdmin.EditWithMain" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BackAdmin/Admin.Master" AutoEventWireup="true" CodeBehind="EditWithMain.aspx.cs" Inherits="Project.BackAdmin.EditWithMain" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

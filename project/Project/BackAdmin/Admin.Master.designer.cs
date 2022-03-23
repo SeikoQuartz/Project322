@@ -11,7 +11,7 @@ namespace Project.BackAdmin
 {
 
 
-    public partial class MasterBoard
+    public partial class Admin
     {
 
         /// <summary>
